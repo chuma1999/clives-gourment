@@ -1,0 +1,145 @@
+.about_us_cover #why_us {
+  background-image: url(../images/about/bottlebar.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.about_us_cover #why_us:hover {
+  background-size: 130%;
+}
+
+.about_us_cover #places {
+  background-image: url(../images/about/tossing.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.about_us_cover #places:hover {
+  background-size: 130%;
+}
+
+.about_us_cover #ingredient {
+  background-image: url(../images/about/ingredients.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.6s ease-in-out;
+}
+
+.about_us_cover #ingredient:hover {
+  background-size: 140%;
+}
+
+@media only screen and (max-width: 1985px) and (min-width: 1410px) {
+  .about_us_cover .choose_us #why_us {
+    background-size: 120%;
+  }
+  .about_us_cover .choose_us #why_us:hover {
+    background-size: 140%;
+  }
+  .about_us_cover #places {
+    background-size: 130%;
+  }
+  .about_us_cover #places:hover {
+    background-size: 150%;
+  }
+  .about_us_cover #ingredient {
+    background-size: 140%;
+  }
+
+  .about_us_cover #ingredient:hover {
+    background-size: 160%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about_us_cover {
+    grid-template-columns: 100%;
+    gap: 3rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .about_us_cover .choose_us h1 {
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+  }
+  .about_us_cover .choose_us #why_us {
+    height: 40rem;
+    background-size: 130%;
+  }
+  .about_us_cover .choose_us #why_us:hover {
+    background-size: 160%;
+  }
+  .about_us_cover .learn_more_btn {
+    width: 85%;
+    margin-left: 2rem;
+  }
+  .about_us_cover #places {
+    margin-bottom: 1rem;
+    background-size: 160%;
+  }
+  .about_us_cover #places:hover {
+    background-size: 190%;
+  }
+
+  .about_us_cover #ingredient {
+    background-size: 170%;
+  }
+
+  .about_us_cover #ingredient:hover {
+    background-size: 190%;
+  }
+}
+
+@media (max-width: 395px) {
+  .about_us_cover .choose_us #why_us {
+    background-size: 150%;
+  }
+  .about_us_cover .choose_us #why_us:hover {
+    background-size: 170%;
+  }
+  .about_us_cover .choose_us #why_us p {
+    width: 100%;
+  }
+  .about_us_cover #ingredient p {
+    width: 100%;
+  }
+  .about_us_cover #places p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 346px) {
+  .about_us_cover .choose_us #why_us {
+    background-size: 160%;
+  }
+  .about_us_cover .choose_us #why_us p {
+    padding-right: 0.5rem;
+  }
+  .about_us_cover .choose_us #why_us:hover {
+    background-size: 190%;
+  }
+  .about_us_cover #places {
+    background-size: 190%;
+  }
+  .about_us_cover #places p {
+    padding-right: 0.5rem;
+  }
+  .about_us_cover #places:hover {
+    background-size: 210%;
+  }
+  .about_us_cover #ingredient {
+    background-size: 200%;
+  }
+  .about_us_cover #ingredient h3 {
+    padding-right: 0.5rem;
+  }
+
+  .about_us_cover #ingredient:hover {
+    background-size: 220%;
+  }
+}

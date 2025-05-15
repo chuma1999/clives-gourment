@@ -1,0 +1,78 @@
+.reserve_table_container {
+  background-image: url(../images/homedone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial {
+  background-color: lightgray;
+  padding: 5rem 0rem 3rem;
+}
+
+.page_links_container a:hover {
+  color: #857313;
+}
+
+.socials_icon_container div:hover {
+  background-color: #857313;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .reserve_table_container {
+    padding: 6rem 0.5rem;
+  }
+  .reserve_table_container .content_detail_cover h1 {
+    width: 100%;
+  }
+  .reserve_table_container .content_detail_cover p {
+    width: 100%;
+  }
+  .reserve_table_container .content_detail_cover .book_btn {
+    width: 60%;
+  }
+  .testimonial .user_testimonials .infor_cover .testimonial_heading {
+    padding: 0rem 0.5rem;
+  }
+  .testimonial .user_testimonials .infor_cover .testimonial_text {
+    width: 100%;
+    padding: 0rem 0.5rem;
+  }
+  .testimonial .user_testimonials .testimonial_courosel {
+    padding-left: 0.5rem;
+  }
+  .testimonial_container .single_user_cover .client_feed {
+    padding: 1rem;
+  }
+  .testimonial_container .single_user_cover .client_name_image {
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .footer_container {
+    padding: 0rem 0.5rem;
+  }
+  .footer_container .question_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .footer_container .question_container .contact_us_btn {
+    margin-bottom: 2rem;
+  }
+  .footer_container .page_links_container {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .footer_container .page_links_container ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    line-height: 1rem;
+  }
+  .footer_container .address_details_container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}

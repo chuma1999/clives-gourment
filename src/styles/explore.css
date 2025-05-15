@@ -1,0 +1,135 @@
+.grid__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 30rem;
+  gap: 2rem;
+}
+.grid__layout .first_div .with_bg_img {
+  background-image: url(../images/about/explore/lobster.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.grid__layout .first_div .with_bg_img:hover {
+  background-size: 140%;
+}
+
+.grid__layout .second_div .bottom_div {
+  background-image: url(../images/about/explore/poachedegg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.grid__layout .second_div .bottom_div:hover {
+  background-size: 170%;
+}
+.grid__layout .third_div .scaptlops_bg {
+  background-image: url(../images/about/explore/scatlops.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 162%;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.grid__layout .third_div .scaptlops_bg:hover {
+  background-size: 192%;
+}
+.grid__layout .third_div .savory_bg {
+  background-image: url(../images/about/explore/appletart.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.grid__layout .third_div .savory_bg:hover {
+  background-size: 130%;
+}
+
+.head_cheff_container .cheff_bg {
+  background-image: url(../images/about/cheffRT.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .explore_container {
+    padding: 0rem 0.5rem;
+  }
+  .explore_container .explore_heading {
+    margin-left: 2rem;
+  }
+  .explore_container .heading_text {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .grid__layout {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  .grid__layout .first_div {
+    height: 29rem;
+  }
+  .grid__layout .with_bg_img {
+    margin-bottom: 0rem;
+  }
+  .grid__layout .first_div .empty_div {
+    height: 5rem;
+  }
+  .grid__layout .second_div {
+    height: 29rem;
+  }
+  .grid__layout .second_div .top_div {
+    gap: 1rem;
+  }
+  .grid__layout .third_div {
+    height: 29rem;
+  }
+  .grid__layout .third_div .vegetarin_btn {
+    width: 10rem;
+    padding: 0.5rem;
+  }
+  .head_cheff_container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 3rem 0.5rem 0rem;
+  }
+  .head_cheff_container .cheff_bg {
+    height: 15rem;
+  }
+  .head_cheff_container .cheff_heading {
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+  }
+  .head_cheff_container .cheff_detail {
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 433px) {
+  .grid__layout .second_div .bottom_div {
+    background-size: 190%;
+  }
+  .grid__layout .second_div .bottom_div:hover {
+    background-size: 210%;
+  }
+}
+
+@media (max-width: 346px) {
+  .grid__layout .second_div .bottom_div {
+    background-size: 200%;
+  }
+  .grid__layout .second_div .bottom_div:hover {
+    background-size: 220%;
+  }
+}

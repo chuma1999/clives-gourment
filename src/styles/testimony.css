@@ -1,0 +1,171 @@
+.testimonial_container {
+  width: 100%;
+  margin-bottom: 1rem;
+  --slide-height: 20rem;
+  --slide-spacing: 1rem;
+  --slide-size: 60%;
+}
+.testimonial_container .embla__viewport {
+  overflow: hidden;
+}
+.testimonial_container .embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.testimonial_container .embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+.testimonial_container .embla__slide__number {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--slide-height);
+  user-select: none;
+}
+.testimonial_container .single_user_cover {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: var(--slide-height);
+}
+.testimonial_container .embla__controls {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  gap: 1.2rem;
+  position: absolute;
+  top: -7rem;
+  right: 0rem;
+}
+.testimonial_container .embla__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+}
+.testimonial_container .embla__button {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 1;
+  border-radius: 50%;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: #857313;
+  }
+}
+.testimonial_container .embla__button:disabled {
+  color: var(--detail-high-contrast);
+}
+.testimonial_container .embla__button__svg {
+  width: 35%;
+  height: 35%;
+}
+.testimonial_container .embla__dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+}
+.testimonial_container .embla__dot {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.testimonial_container .embla__dot:after {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  content: "";
+}
+.testimonial_container .embla__dot--selected:after {
+  box-shadow: inset 0 0 0 0.2rem var(--text-body);
+}
+
+.testimonial_container .client_image_bg {
+  background-image: url(../images/testimony/romantictossing.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial_container .client_image_bg_2 {
+  background-image: url(../images/testimony/favouratedish.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial_container .client_image_bg_3 {
+  background-image: url(../images/testimony/bestpizza.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial_container .client_image_bg_4 {
+  background-image: url(../images/testimony/musicband.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial_container .client_image_bg_5 {
+  background-image: url(../images/testimony/besttimes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .testimonial_container {
+    --slide-height: 25rem;
+    --slide-size: 70%;
+  }
+  .testimonial_container .single_user_cover {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr 1fr;
+    height: var(--slide-height);
+  }
+  .testimonial_container .embla__controls {
+    display: none;
+  }
+
+  .user_testimonials .infor_cover {
+    margin-left: 2rem;
+  }
+}

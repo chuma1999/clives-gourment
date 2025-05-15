@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+  .gallery_cover .gallery_text {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .gallery_cover .text_heading {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .gallery_cover .our_gallery {
+    margin-left: 2rem;
+  }
+}
